@@ -6,4 +6,4 @@ CLAUDE NGASSA
 
 This repo is the revised repo for my DEVOPS project
 
-There are all labs inside
+There are all labs
