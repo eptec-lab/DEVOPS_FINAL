@@ -21,4 +21,4 @@ If it's not the case, follw this link to install redis :
     MacOS: brew install redis or https://redis.io/topics/quickstart
     Linux or MacOS: https://redis.io/topics/quickstart
 
-    Try it inside th: npm run test
+    Try it inside the terminal: npm run test
