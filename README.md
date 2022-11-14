@@ -6,4 +6,7 @@ CLAUDE NGASSA
 
 This repo is the revised repo for my DEVOPS project
 
-There are all labs. I just have to finish with the last lab about Docker
+There are all labs. 
+Lab with Docker finished.
+## Next
+Just need to refactor different codes inside the lab 7 and pushing ther project
