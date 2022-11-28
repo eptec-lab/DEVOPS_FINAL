@@ -37,6 +37,7 @@ jobs:
         cache: 'npm'
         cache-dependency-path: '**/package-lock.json'
     - run: npm ci
+    - run: npm install mocha --save-dev
     - run: npm install prompt-sync 
     - run: npm run build --if-present
     - run: npm test
