@@ -27,7 +27,7 @@ jobs:
         node-version: ${{ matrix.node-version }}
         cache: 'npm'
     - run: npm ci
-    - run: npx mocha <args>
+    - run: npm install --save mocha chai
     - run: node node_modules/.bin/mocha
     - run: npm run build --if-present
     - run: npm test
