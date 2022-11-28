@@ -42,7 +42,7 @@ Send a POST (REST protocol) request using terminal:
 ```bash
 curl --header "Content-Type: application/json" \
   --request POST \
-  --data '{"username":"Claude123","firstname":"Claude","lastname":"NGASSA"}' \
+  --data '{"username":"sergkudinov","firstname":"sergei","lastname":"kudinov"}' \
   http://localhost:3000/user
 ```
 
@@ -66,7 +66,3 @@ npm test
 
 Sergei Kudinov   
 sergei@adaltas.com
-
-## Tested by
-
-Claude NGASSA

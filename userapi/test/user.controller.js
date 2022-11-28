@@ -1,6 +1,15 @@
 const { expect } = require('chai')
 const userController = require('../src/controllers/user')
 const db = require('../src/dbClient')
+const prompt = require('prompt-sync')();
+
+
+
+
+
+
+
+
 
 describe('User', () => {
   
@@ -13,9 +22,9 @@ describe('User', () => {
 
     it('create a new user', (done) => {
       const user = {
-        username: 'sergkudinov',
-        firstname: 'Sergei',
-        lastname: 'Kudinov'
+        username: 'claudengassa',
+        firstname: 'claude',
+        lastname: 'NGASSA'
       }
       userController.create(user, (err, result) => {
         expect(err).to.be.equal(null)
@@ -36,17 +45,13 @@ describe('User', () => {
       })
     })
 
-    // it('avoid creating an existing user', (done)=> {
-    //   // TODO create this test
-    //   // Warning: the user already exists
-    //   done()
-    // })
+    
   
     it('avoid creating an existing user', (done)=> {
       const user = {
-        username: 'sergkudinov',
-        firstname: 'Sergei',
-        lastname: 'Kudinov'
+        username: 'claudengassa',
+        firstname: 'claude',
+        lastname: 'NGASSA'
       }
       // Create a user
       userController.create(user, () => {
@@ -62,30 +67,58 @@ describe('User', () => {
 
   })
 
-  // TODO Create test for the get method
-  // describe('Get', ()=> {
-  //   
-  //   it('get a user by username', (done) => {
-  //     // 1. First, create a user to make this unit test independent from the others
-  //     // 2. Then, check if the result of the get method is correct
-  //     done()
-  //   })
-  //
-  //   it('cannot get a user when it does not exist', (done) => {
-  //     // Chech with any invalid user
-  //     done()
-  //   })
-  //
-  // })
+  // TODO Update user when it exists
+  describe('update', ()=> {
+    var value,first,last;
+    it('update a user by username', (done) => {
+      console.log("What do you want to change ?\n1- Firstname\n2- Lastname")
+      value=prompt("Enter the choice: ")
+      if(value == 1){
+        first=prompt("Enter the new first name: ")
+      }
+      else{
+        first='claude'// default firstname
+      }
+      if (value==2){
+        last= prompt("Enter the new last name: ")
+      }else
+      {
+        last='NGASSA'
+      }
+      const user = {
+        username: 'claudengassa',
+        firstname: first,
+        lastname: last
+      }
+        
+      userController.update(user,(err,result)=>{
+        expect(err).to.be.equal(null)
+        expect(result).to.be.deep.equal({
+          firstname: user.firstname,
+          lastname: user.lastname
+          })
+        done()
+        })
+          
+          
+    })
+         
+    
+    it('cannot update a user when it does not exist', (done) => {
+       // Chech with any invalid user
+       done()
+     })
+  
+   })
 
 
   describe('Get', ()=> {
 
     it('get a user by username', (done) => {
       const user = {
-        username: 'sergkudinov',
-        firstname: 'Sergei',
-        lastname: 'Kudinov'
+        username: 'claudengassa',
+        firstname: 'claude',
+        lastname: 'NGASSA'
       }
       // Create a user
       userController.create(user, () => {
@@ -93,8 +126,8 @@ describe('User', () => {
         userController.get(user.username, (err, result) => {
           expect(err).to.be.equal(null)
           expect(result).to.be.deep.equal({
-            firstname: 'Sergei',
-            lastname: 'Kudinov'
+            firstname: 'claude',
+            lastname: 'NGASSA'
           })
           done()
         })
@@ -110,4 +143,47 @@ describe('User', () => {
     })
   
   })
+
+
+
+  describe('delete', ()=> {
+
+    it('delete a user by username', (done) => {
+      const user = {
+        username: 'claudengassa',
+        firstname: 'claude',
+        lastname: 'NGASSA'
+      }
+      // Create a user
+      
+        userController.delete(user.username, (err, result) => {
+          expect(err).to.be.equal(null)
+          expect(result).to.be.deep.equal(null)
+          done()
+        })
+      
+    })
+  
+    it('can not delete a user when it does not exist', (done) => {
+      userController.get('invalid', (err, result) => {
+        expect(err).to.not.be.equal(null)
+        expect(result).to.be.equal(null)
+        done()
+      })
+    })
+  
+  })
 })
+
+
+
+
+
+
+
+
+
+
+
+
+
