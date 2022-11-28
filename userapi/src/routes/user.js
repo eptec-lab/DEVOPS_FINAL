@@ -41,40 +41,40 @@ userRouter
       resp.status(200).json(respObj)
     })
     })
-    .put('/',(req, resp) => {
-      userController.update(req.body(),(err,res)=>{
-        let respObj
-        if(err) {
-          respObj = {
-            status: "error",
-            msg: err.message
-          }
-          return resp.status(400).json(respObj)
-        }
-        respObj = {
-          status: "success",
-          msg: res
-        }
-        resp.status(200).json(respObj)
-      })
-    })
-    .delete('/',(req,resp)=>{
-      userController.delete(req.body,(err,res)=>{
-        let respObj
-        if(err) {
-          respObj = {
-            status: "error",
-            msg: err.message
-          }
-          return resp.status(400).json(respObj)
-        }
-        respObj = {
-          status: "success",
-          msg: res
-        }
-        resp.status(200).json(respObj)
-      })
-    })
+    // .put('/',(req, resp) => {
+    //   userController.update(req.body(),(err,res)=>{
+    //     let respObj
+    //     if(err) {
+    //       respObj = {
+    //         status: "error",
+    //         msg: err.message
+    //       }
+    //       return resp.status(400).json(respObj)
+    //     }
+    //     respObj = {
+    //       status: "success",
+    //       msg: res
+    //     }
+    //     resp.status(200).json(respObj)
+    //   })
+    // })
+    // .delete('/',(req,resp)=>{
+    //   userController.delete(req.body,(err,res)=>{
+    //     let respObj
+    //     if(err) {
+    //       respObj = {
+    //         status: "error",
+    //         msg: err.message
+    //       }
+    //       return resp.status(400).json(respObj)
+    //     }
+    //     respObj = {
+    //       status: "success",
+    //       msg: res
+    //     }
+    //     resp.status(200).json(respObj)
+    //   })
+    // })
 
   
 module.exports = userRouter
