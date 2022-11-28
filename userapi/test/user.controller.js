@@ -72,19 +72,19 @@ describe('User', () => {
     var value,first,last;
     it('update a user by username', (done) => {
       console.log("What do you want to change ?\n1- Firstname\n2- Lastname")
-      value=prompt("Enter the choice: ")
-      if(value == 1){
-        first=prompt("Enter the new first name: ")
-      }
-      else{
+      // value=prompt("Enter the choice: ")
+      // if(value == 1){
+      //   // first=prompt("Enter the new first name: ")
+      // }
+      // else{
         first='claude'// default firstname
-      }
-      if (value==2){
-        last= prompt("Enter the new last name: ")
-      }else
-      {
+      // }
+      // if (value==2){
+      //   last= prompt("Enter the new last name: ")
+      // }else
+      // {
         last='NGASSA'
-      }
+      // }
       const user = {
         username: 'claudengassa',
         firstname: first,
