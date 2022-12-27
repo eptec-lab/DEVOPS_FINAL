@@ -9,7 +9,7 @@ Vagrant.configure("2") do |config|
       config.vbguest.auto_update = false
     end
   end
-
+  
   # Define the gitlab_server VM
   config.vm.define "gitlab_server" do |server|
     # Specify the Vagrant box to use
@@ -37,5 +37,12 @@ Vagrant.configure("2") do |config|
     # Only run the roles with these tags
     ansible.tags = "install"
   end
+
+  Vagrant.configure("2") do |config|
+    # other config here
+  
+    config.vm.synced_folder "src/", "/srv/website"
+  end
+  
 
 end
