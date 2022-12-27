@@ -61,6 +61,7 @@ jobs:
         id: deploy-to-webapp
         uses: azure/webapps-deploy@v2
         with:
+          creds: ${{ secrets.AZURE_CREDENTIALS }}
           app-name: 'DevProject'
           slot-name: 'Production'
           publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_741B4B99CF354D1290BC95EAAAFE3D42 }}
