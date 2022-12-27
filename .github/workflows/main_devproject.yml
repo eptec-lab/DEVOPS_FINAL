@@ -51,7 +51,8 @@ jobs:
     environment:
       name: 'Production'
       url: ${{ steps.deploy-to-webapp.outputs.webapp-url }}
-
+      
+      
     steps:
       - name: Download artifact from build job
         uses: actions/download-artifact@v2
@@ -61,7 +62,12 @@ jobs:
         id: deploy-to-webapp
         uses: azure/webapps-deploy@v2
         with:
+          creds: ${{ secrets.AZURE_CREDENTIALS }}
+          environment: 'AzureStack'
+          
           app-name: 'DevProject'
           slot-name: 'Production'
           publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_741B4B99CF354D1290BC95EAAAFE3D42 }}
           package: .
+      - run: |
+          az webapp list --query "[?state=='Running']"
