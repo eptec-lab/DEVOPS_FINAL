@@ -1,0 +1,23 @@
+version: "3"
+services:
+  redis:
+    image: redis:latest
+    deploy:
+      restart_policy:
+        condition: on-failure
+        delay: 2s
+        max_attempts: 3
+        window: 120s
+    command: redis-server
+    ports:
+     - "6379:6379"
+
+  userapi:
+    depends_on:
+      - redis
+    image: userapi:latest
+    ports:
+      - 5000:8000
+
+    
+
