@@ -9,7 +9,11 @@ Vagrant.configure("2") do |config|
       config.vbguest.auto_update = false
     end
   end
+<<<<<<< HEAD
   
+=======
+
+>>>>>>> b9fba0d (perf : improve perfoemances of each)
   # Define the gitlab_server VM
   config.vm.define "gitlab_server" do |server|
     # Specify the Vagrant box to use
@@ -38,6 +42,7 @@ Vagrant.configure("2") do |config|
     ansible.tags = "install"
   end
 
+<<<<<<< HEAD
   Vagrant.configure("2") do |config|
     # other config here
   
@@ -45,4 +50,6 @@ Vagrant.configure("2") do |config|
   end
   
 
+=======
+>>>>>>> b9fba0d (perf : improve perfoemances of each)
 end
