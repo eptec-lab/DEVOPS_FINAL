@@ -1,68 +1,24 @@
-# User API web application
+# Author
 
-It is a basic NodeJS web application exposing REST API that creates and stores user parameters in [Redis database](https://redis.io/).
+Claude NGASSA
 
-## Functionality
 
-1. Start a web server
-2. Create a user
+## Description
 
-## Installation
+DEVOPS project based on all the labs
 
-This application is written on NodeJS and it uses Redis database.
+### Creating a web application
 
-1. [Install NodeJS](https://nodejs.org/en/download/)
+This part is stored in userapi folder 
+I pulled the lab did with the you, modify and improved some parts inside 
 
-2. [Install Redis](https://redis.io/download)
+#### !Important
 
-3. Install application
+Must be sure that you've Redis installed and runned inside your computer
+If it's not the case, follw this link to install redis : 
+    
+    Windows: https://redis.com/ebook/appendix-a/a-3-installing-on-windows/a-3-2-installing-redis-on-window/
+    MacOS: brew install redis or https://redis.io/topics/quickstart
+    Linux or MacOS: https://redis.io/topics/quickstart
 
-Go to the root directory of the application (where `package.json` file located) and run:
-
-```
-npm install 
-```
-
-## Usage
-
-1. Start a web server
-
-From the root directory of the project run:
-
-```
-npm start
-```
-
-It will start a web server available in your browser at http://localhost:3000.
-
-2. Create a user
-
-Send a POST (REST protocol) request using terminal:
-
-```bash
-curl --header "Content-Type: application/json" \
-  --request POST \
-  --data '{"username":"sergkudinov","firstname":"sergei","lastname":"kudinov"}' \
-  http://localhost:3000/user
-```
-
-It will output:
-
-```
-{"status":"success","msg":"OK"}
-```
-
-Another way to test your REST API is to use [Postman](https://www.postman.com/).
-
-## Testing
-
-From the root directory of the project, run:
-
-```
-npm test
-```
-
-## Author
-
-Sergei Kudinov   
-sergei@adaltas.com
+    Try it inside the terminal: npm run test
