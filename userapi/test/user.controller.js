@@ -71,35 +71,35 @@ describe('User', () => {
   describe('update', ()=> {
     var value,first,last;
     it('update a user by username', (done) => {
-      console.log("What do you want to change ?\n1- Firstname\n2- Lastname")
-      // value=prompt("Enter the choice: ")
-      // if(value == 1){
-      //   // first=prompt("Enter the new first name: ")
-      // }
-      // else{
-        first='claude'// default firstname
-      // }
-      // if (value==2){
-      //   last= prompt("Enter the new last name: ")
-      // }else
-      // {
-        last='NGASSA'
-      // }
-      const user = {
-        username: 'claudengassa',
-        firstname: first,
-        lastname: last
-      }
-      userController.get(user.username,(err,res)=>{
-
-        userController.update(user,(err,result)=>{
-          // expect(err).to.be.equal(null)
-          // expect(result).to.be.deep.equal({
-          //   firstname: user.firstname,
-          //   lastname: user.lastname
-          // })
-          done()
-        })
+      // console.log("What do you want to change ?\n1- Firstname\n2- Lastname")
+      //  value=prompt("Enter the choice: ")
+      //  if(value == 1){
+      //     first=prompt("Enter the new first name: ")
+      //  }
+      //  else{
+      //    first='claude'// default firstname
+      //  }
+      //  if (value==2){
+      //    last= prompt("Enter the new last name: ")
+      //  }else
+      //  {
+      //    last='NGASSA'
+      //   }
+        const user = {
+          username: 'claudengassa',
+          firstname: 'Duval',
+          lastname: 'DAMIEN'
+        }
+       userController.create(user,(err,res)=>{
+         
+         userController.update(user,(err,result)=>{
+          //expect(err).to.be.equal(null)
+           //expect(result).to.be.deep.equal({
+             //firstname: user.firstname,
+             //lastname: user.lastname
+            //})
+            done()
+          })
       })
           
           
