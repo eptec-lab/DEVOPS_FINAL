@@ -5,3 +5,4 @@ node_modules
 !.eslintignore
 !.eslintrc.json
 .dockerignore
+minikube-linux-amd64
