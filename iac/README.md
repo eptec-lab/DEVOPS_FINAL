@@ -1,3 +1,7 @@
+# Author
+
+Claude NGASSA
+
 # Part 3 : Apply Iac using Vagrant, Gitlab healthcheck and Ansible
 
 In this part, we applied Iac using Vagrant, Gitlab and Ansible using declarative approach
@@ -74,6 +78,8 @@ About Ansible :
 It will take 5-10 min to install all the necessary software including required packages, GitLab instance, and databases.
 
 
+
+
 ### Test the installation 
 
 
@@ -98,15 +104,16 @@ Run the `gitlab/healthcheck` role:
     ```bash
     ansible-playbook /vagrant/playbooks/run.yml --tags TAG -i /tmp/vagrant-ansible/inventory/vagrant_ansible_local_inventory
     ```
-      
+    ![ansible](../image/playhook.png)
 
-### Usefull links for this part :
+### Useful links for this part :
 
 - Gitlab installation on CentOS : [the official documentation](https://about.gitlab.com/install/#centos-7)
 
 - For more informations about Healthcheck with Gitlab: [GitLab Health Check doc](https://docs.gitlab.com/ee/user/admin_area/monitoring/health_check.html)
 
-The part 4 is in the [Userapi](https://github.com/eptec-lab/DEVOPS_FINAL/tree/main/userapi#part-4--building-docker-image-of-the-app-and-push-it-to-docker-hub) folder
-# Author
+###### The part 4 is in the [Userapi](https://github.com/eptec-lab/DEVOPS_FINAL/tree/main/userapi#part-4--building-docker-image-of-the-app-and-push-it-to-docker-hub) folder
 
-Claude NGASSA TSALA
+
+
+##### [Get back to the root README](https://github.com/eptec-lab/DEVOPS_FINAL#readme)
