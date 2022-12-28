@@ -22,6 +22,8 @@ This is how the project is explained :
 
 - Part 7 is described in the istio [README](https://github.com/eptec-lab/DEVOPS_FINAL/blob/main/istio/README.md)
 
+
+### *** Useful links for each part are listed in each README *** 
 ## Not finished
 
 I encountered some issues on the deployment on part 7 and monitoring part 8 
