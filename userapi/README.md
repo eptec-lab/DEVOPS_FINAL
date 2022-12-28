@@ -1,3 +1,8 @@
+# Author
+
+Claude NGASSA
+
+
 # Part 1 : Create a web application
 
 
@@ -70,6 +75,14 @@ If it's not the case, follw this link to install redis :
 
     Try it inside the terminal: npm run test
 
+### Useful links for this part 
+- [What is Devops](https://github.com/adaltas/ece-devops-2022-fall/blob/main/modules/01.devops-introduction/index.md#introduction-to-devops)
+- [Continuous testing](https://github.com/adaltas/ece-devops-2022-fall/blob/main/modules/03.continuous-testing/index.md#continuous-testing)
+
+
+
+
+
 
 # Part 2 : APPLY CI/CD using Git actions and Microsoft azure
 
@@ -78,7 +91,7 @@ Theses actions are called in a workflow
 > You can learn more about what is an action workflow [Here](https://docs.github.com/en/actions/using-workflows/about-workflows#:~:text=A%20workflow%20is%20a%20configurable,or%20at%20a%20defined%20schedule.)
 
 
-### 1- Creation of a workflow for Node.js application
+#### 1- Creation of a workflow for Node.js application
 
 The process of creating a workflow is explained in this [documentation](https://docs.github.com/en/actions/guides/building-and-testing-nodejs).  
 
@@ -96,7 +109,7 @@ Then we can configure this workflow as follow :
 ![build](../image/build.png)
 
 
-### 2- Continuous Delivery (Deployment) with Microsoft Azure
+#### 2- Continuous Delivery (Deployment) with Microsoft Azure
 
 ![Azure](../image/azure.png)
 
@@ -116,7 +129,7 @@ The following code represents the deployment configuration in the workflow file 
 ![deployment](../image/deploy.png)
 
 
-### Results
+#### Results
 
 After a new commit, we obtain the following results about each step of CI/CD :
 
@@ -126,23 +139,25 @@ After a new commit, we obtain the following results about each step of CI/CD :
 
 
 #### Useful links for this section :
+
 - [introduction to GitHub Actions](https://docs.github.com/en/actions/learn-github-actions/introduction-to-github-actions)
 - [Azure tutorials]
-- https://azure.microsoft.com/en-us/free/students/
-- https://azure.microsoft.com/en-us/free/
-- https://learn.microsoft.com/en-us/azure/app-service/deploy-github-actions?tabs=applevel
-- https://learn.microsoft.com/en-us/azure/app-service/quickstart-nodejs?tabs=linux&pivots=development-environment-azure-portal
-- https://azure.microsoft.com/fr-fr/products/cache/#overview
-- https://learn.microsoft.com/en-us/azure/azure-cache-for-redis/cache-nodejs-get-started
-- https://learn.microsoft.com/en-us/azure/cosmos-db/nosql/tutorial-nodejs-web-app
+   - https://azure.microsoft.com/en-us/free/students/
+   - https://azure.microsoft.com/en-us/free/
+   - https://learn.microsoft.com/en-us/azure/app-service/deploy-github-actions?tabs=applevel
+   - https://learn.microsoft.com/en-us/azure/app-service/quickstart-nodejs?tabs=linux&pivots=development-environment-azure-portal
+   - https://azure.microsoft.com/fr-fr/products/cache/#overview
+   - https://learn.microsoft.com/en-us/azure/azure-cache-for-redis/cache-nodejs-get-started
+   - https://learn.microsoft.com/en-us/azure/cosmos-db/nosql/tutorial-nodejs-web-app
 
+- [Continuous Integration & Continuous Delivery](https://github.com/adaltas/ece-devops-2022-fall/blob/main/modules/04.ci-cd/index.md)
 # Part 3 : Iac approach
 
 This part is in the [iac folder](../iac/)
 
 # Part 4 : Building Docker Image of the App and push it to Docker Hub
 
-I created a *Dockerfile* for this app
+I created a **Dockerfile** for this app
 
 We need to firstly install Docker in your computer.
 
@@ -181,6 +196,7 @@ Then, we might check if your Docker container appears in the local Docker images
    ```
 
 ![image](../image/list_image.png)
+
 
 ### Publish image on DockerHub
 
@@ -223,8 +239,11 @@ We can see in our remote engine (Docker hub), the image has been pushed and is a
 ![hub](../image/image_push-hub.png)
 
 
-For the next part, you can get back to the root [README](../README.md)
 
-# Author
+### Useful links for this part 
 
-Claude NGASSA
+- [Docker explanation](https://github.com/adaltas/ece-devops-2022-fall/blob/main/modules/06.docker-containers/index.md)
+
+
+
+##### [Get back to the root README](https://github.com/eptec-lab/DEVOPS_FINAL#readme)
