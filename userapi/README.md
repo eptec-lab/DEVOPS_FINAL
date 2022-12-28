@@ -69,7 +69,7 @@ npm test
 
 # Part 2 : APPLY CI/CD using azure
 
-# image/build.png
+![alt Build workflow] (https://github.com/eptec-lab/DEVOPS_FINAL/blob/63655847cfd762a20208b47a210677e345c146b8/image/build.png)
 
 
 # Part 3 : APPLY IAC USING VAGRANT AND ANSIBLE
