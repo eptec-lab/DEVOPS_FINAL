@@ -112,7 +112,7 @@ Run the `gitlab/healthcheck` role:
 
 - For more informations about Healthcheck with Gitlab: [GitLab Health Check doc](https://docs.gitlab.com/ee/user/admin_area/monitoring/health_check.html)
 
-###### The part 4 is in the [Userapi](https://github.com/eptec-lab/DEVOPS_FINAL/tree/main/userapi#part-4--building-docker-image-of-the-app-and-push-it-to-docker-hub) folder
+### The part 4 is in the [Userapi](https://github.com/eptec-lab/DEVOPS_FINAL/tree/main/userapi#part-4--building-docker-image-of-the-app-and-push-it-to-docker-hub) folder
 
 
 
