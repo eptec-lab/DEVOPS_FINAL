@@ -1,3 +1,8 @@
+# Author
+
+Claude NGASSA
+
+
 # Part 6 Orchestration with Kubernetes 
 
 This is a kubernetes orchestration for our [userapi](https://github.com/eptec-lab/DEVOPS_FINAL/tree/main/userapi) application.
@@ -16,6 +21,9 @@ All the files are for orchestration in the [k8s](https://github.com/eptec-lab/DE
 #### 1. Installation of Minikube, kubectl
 
 a. Install BETA version of [minikube](https://kubernetes.io/docs/tasks/tools/install-minikube/) by following the instructions depending on your OS.
+
+![minikube](../image/minikube_install.png)
+
 
 b. [Install kubectl](https://kubernetes.io/docs/tasks/tools/) following the instructions depending on your OS. There is a useful bugfix in the BETA version so please choose that.
 
@@ -108,7 +116,22 @@ kubectl get services
 ```
 ![services](../image/pods.png)
 
+> Get the name of the persistent volumes created and persistent volume claim :
+
+```bash
+kubectl get services
+```
+![pv](../image/volume-claim.png)
+
 
 ## Useful ressources for this part
 - Learn more about Using the [deployment documentation](https://kubernetes.io/docs/concepts/workloads/controllers/deployment/).
 - Learn how to use the [service documentation](https://kubernetes.io/docs/concepts/services-networking/service/)
+
+- [Container orchestration with Kubernetes](https://github.com/adaltas/ece-devops-2022-fall/blob/main/modules/07.container-orchestration/index.md#container-orchestration--with-kubernetes)
+
+-[Storage in Kubernetes](https://github.com/adaltas/ece-devops-2022-fall/blob/main/modules/08.storage-in-kubernetes/index.md#storage-in-kubernetes)
+
+- [Kubernetes concept](https://kubernetes.io/docs/concepts/)
+
+##### [Get back to the root README](https://github.com/eptec-lab/DEVOPS_FINAL#readme)
