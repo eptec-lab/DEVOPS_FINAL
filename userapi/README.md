@@ -69,6 +69,9 @@ npm test
 
 # Part 2 : APPLY CI/CD using azure
 
+image/build.png
+
+
 # Part 3 : APPLY IAC USING VAGRANT AND ANSIBLE
 
 # Part 4 : Building Docker Image of the App
