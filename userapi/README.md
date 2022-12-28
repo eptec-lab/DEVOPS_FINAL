@@ -153,7 +153,7 @@ After a new commit, we obtain the following results about each step of CI/CD :
 - [Continuous Integration & Continuous Delivery](https://github.com/adaltas/ece-devops-2022-fall/blob/main/modules/04.ci-cd/index.md)
 # Part 3 : Iac approach
 
-This part is in the [iac folder](../iac/)
+### This part is in the [**iac** folder](../iac/)
 
 # Part 4 : Building Docker Image of the App and push it to Docker Hub
 
@@ -246,4 +246,4 @@ We can see in our remote engine (Docker hub), the image has been pushed and is a
 
 
 
-##### [Get back to the root README](https://github.com/eptec-lab/DEVOPS_FINAL#readme)
+### [Get back to the root README](https://github.com/eptec-lab/DEVOPS_FINAL#readme)
