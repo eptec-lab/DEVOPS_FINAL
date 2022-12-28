@@ -227,4 +227,4 @@ For the next part, you can get back to the root [README](../README.md)
 
 # Author
 
-### Claude NGASSA
+Claude NGASSA
