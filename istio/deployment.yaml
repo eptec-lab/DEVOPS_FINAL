@@ -1,6 +1,6 @@
-************************************************************************************************
+
 # Redis service
-************************************************************************************************
+
 apiVersion: v1
 kind: Service
 metadata:
@@ -41,9 +41,9 @@ spec:
           imagePullPolicy: IfNotPresent
           ports:
             - containerPort: 6379
-************************************************************************************************
+
 # Userapi 
-************************************************************************************************
+
 ---
 apiVersion: v1
 kind: Service
@@ -108,7 +108,7 @@ spec:
     spec:
       containers:
         - name: userapi
-          image: ngass12/userapi
+          image: ngass12/userapi1
           imagePullPolicy: IfNotPresent
           ports:
             - containerPort: 3000
