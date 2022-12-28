@@ -16,7 +16,7 @@ This is how the project is explained :
 
 ##### - Part 3 is described is the iac [README](https://github.com/eptec-lab/DEVOPS_FINAL/tree/main/iac#part-3--apply-iac-using-vagrant-gitlab-healthcheck-and-ansible)
 
-##### - Part 5 is described in the root [README](https://github.com/eptec-lab/DEVOPS_FINAL#readme)
+##### - Part 5 is described in the root [README](https://github.com/eptec-lab/DEVOPS_FINAL#part-5--make-container-orchestration-using-docker-compose)
 
 ##### - Part 6 is described in the k8s [README](https://github.com/eptec-lab/DEVOPS_FINAL/blob/main/k8s/README.md)
 
