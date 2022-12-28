@@ -88,11 +88,11 @@ In order to improve your Workflow to connect Node.js application to Redis, uses 
   - [Creating Redis service containers](https://docs.github.com/en/actions/guides/creating-redis-service-containers)
 
 Then we can configure this workflow as follow :
-![build](./image/build.png)
+![build](../image/build.png)
 
 
 ### 2- Continuous Delivery (Deployment) with Microsoft Azure
-![Azure](./image/azure.png)
+![Azure](../image/azure.png)
 
 Heroku [became no longer free](https://blog.heroku.com/next-chapter), we will deploy the web app with Microsoft Azure Cloud.
 
