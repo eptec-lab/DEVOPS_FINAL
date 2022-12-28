@@ -80,4 +80,4 @@ Then you can access to a web server in your browser with the url print which is 
 - [What can you do with Istio](https://github.com/adaltas/ece-devops-2022-fall/blob/main/modules/09.cloud-native/index.md#what-can-you-do-with-istio)
 
 
-### [Get back to the root README](https://github.com/eptec-lab/DEVOPS_FINAL#readme)
+### Get back to the root [README](https://github.com/eptec-lab/DEVOPS_FINAL#readme)

@@ -246,4 +246,4 @@ We can see in our remote engine (Docker hub), the image has been pushed and is a
 
 
 
-### [Get back to the root README](https://github.com/eptec-lab/DEVOPS_FINAL#readme)
+### Get back to the root [README](https://github.com/eptec-lab/DEVOPS_FINAL#readme)

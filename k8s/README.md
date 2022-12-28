@@ -134,4 +134,4 @@ kubectl get services
 
 - [Kubernetes concept](https://kubernetes.io/docs/concepts/)
 
-### [Get back to the root README](https://github.com/eptec-lab/DEVOPS_FINAL#readme)
+### Get back to the root [README](https://github.com/eptec-lab/DEVOPS_FINAL#readme)
