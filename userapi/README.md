@@ -88,10 +88,12 @@ In order to improve your Workflow to connect Node.js application to Redis, uses 
   - [Creating Redis service containers](https://docs.github.com/en/actions/guides/creating-redis-service-containers)
 
 Then we can configure this workflow as follow :
+
 ![build](../image/build.png)
 
 
 ### 2- Continuous Delivery (Deployment) with Microsoft Azure
+
 ![Azure](../image/azure.png)
 
 Heroku [became no longer free](https://blog.heroku.com/next-chapter), we will deploy the web app with Microsoft Azure Cloud.
@@ -105,6 +107,18 @@ Then connect to your [azure portal](https://portal.azure.com/)
 
 For all necessarilly actions and configurations in Azure, you have to follow this [Tutorial](https://github.com/adaltas/ece-devops-2022-fall/edit/main/modules/04.ci-cd/azure-webapp/webapp-tuto.md)
 
+The following code represents the deployment configuration in the workflow file :
+
+![deployment](../image/deploy.png)
+
+
+### Results
+
+After a new commit, we obtain the following results about each step of CI/CD :
+
+![result build](../image/build_res.png)
+
+![result deploy](../image/deploy_res.png)
 
 
 ### Useful links for this section :
